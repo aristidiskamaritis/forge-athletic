@@ -1,0 +1,571 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FORGE Athletic Club — Gym, Classes &amp; Coaching in Limassol</title>
+  <meta name="description" content="FORGE Athletic Club is a 1,400 m² strength & conditioning gym in Limassol, Cyprus. Premium equipment, 45+ classes a week, expert coaches. Book your free trial session online.">
+  <meta name="theme-color" content="#0B0908">
+
+  <!-- Open Graph (link previews on Facebook / Viber / WhatsApp / Messenger) -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://aristidiskamaritis.github.io/forge-athletic/">
+  <meta property="og:title" content="FORGE Athletic Club — Limassol">
+  <meta property="og:description" content="Premium strength & conditioning gym in Limassol. 45+ classes a week, expert coaches. Your first session is on us.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1637666062717-1c6bcfa4a4df?auto=format&fit=crop&w=1200&h=630&q=80">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:ital,wght@0,800;0,900;1,800;1,900&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="images/film-poster.jpg" fetchpriority="high">
+
+  <link rel="stylesheet" href="css/style.css?v=2">
+
+  <script>
+    document.documentElement.classList.add("js");
+    // ?motion=1 forces animations even when the device asks for reduced motion
+    if (/[?&]motion=1/.test(location.search)) document.documentElement.classList.add("force-motion");
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ExerciseGym",
+    "name": "FORGE Athletic Club",
+    "url": "https://aristidiskamaritis.github.io/forge-athletic/",
+    "image": "https://images.unsplash.com/photo-1637666062717-1c6bcfa4a4df?auto=format&fit=crop&w=1200&q=80",
+    "priceRange": "€€",
+    "telephone": "+357 25 123 456",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "48 Spyrou Kyprianou Avenue",
+      "addressLocality": "Limassol",
+      "postalCode": "4043",
+      "addressCountry": "CY"
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "06:00", "closes": "23:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "08:00", "closes": "21:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "09:00", "closes": "18:00" }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <!-- One continuous film behind the whole page; scrolling walks through the gym scene by scene -->
+  <div class="film" aria-hidden="true">
+    <video class="film-video" muted playsinline preload="auto" poster="images/film-poster.jpg" disablepictureinpicture tabindex="-1">
+      <source src="videos/film.mp4" type="video/mp4">
+    </video>
+    <div class="film-veil"></div>
+    <div class="film-grain"></div>
+  </div>
+  <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a href="#top" class="logo" aria-label="FORGE Athletic Club — home">
+        <svg class="logo-mark" viewBox="0 0 40 40" aria-hidden="true">
+          <defs>
+            <linearGradient id="fire-h" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#E0161B"/><stop offset=".55" stop-color="#FF4D1A"/><stop offset="1" stop-color="#FF9A2E"/></linearGradient>
+          </defs>
+          <path d="M20 2.5 35.2 11.25v17.5L20 37.5 4.8 28.75v-17.5z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+          <path d="M20.6 10.5c1.2 3.9 6 6.2 6 11.6a6.6 6.6 0 0 1-13.2 0c0-2.8 1.4-4.8 2.9-6.1.3 1.9 1.3 3 2.6 3.4-.4-3.3.1-6.2 1.7-8.9z" fill="url(#fire-h)"/>
+        </svg>
+        <span class="logo-text">FORGE<small>Athletic Club</small></span>
+      </a>
+
+      <nav class="main-nav" id="main-nav" aria-label="Main">
+        <ul>
+          <li><a href="#about" data-i18n="nav.club">The Club</a></li>
+          <li><a href="#equipment" data-i18n="nav.equipment">Equipment</a></li>
+          <li><a href="#classes" data-i18n="nav.classes">Classes</a></li>
+          <li><a href="#membership" data-i18n="nav.membership">Membership</a></li>
+          <li><a href="#visit" data-i18n="nav.visit">Visit</a></li>
+        </ul>
+        <a href="#trial" class="btn btn-primary nav-mobile-cta" data-i18n="nav.trial">Free trial</a>
+      </nav>
+
+      <div class="header-actions">
+        <div class="lang-switch" role="group" aria-label="Language">
+          <span class="pill" aria-hidden="true"></span>
+          <button type="button" data-lang="en" aria-pressed="true">EN</button>
+          <button type="button" data-lang="el" aria-pressed="false">ΕΛ</button>
+        </div>
+        <a href="#trial" class="btn btn-primary btn-sm header-cta" data-i18n="nav.trial">Free trial</a>
+        <button class="nav-toggle" type="button" aria-controls="main-nav" aria-expanded="false" aria-label="Open menu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-media" aria-hidden="true"></div>
+      <div class="container hero-content">
+        <p class="status-pill" id="open-status" aria-live="polite"><span class="dot"></span><span class="status-text">&nbsp;</span></p>
+        <h1 id="hero-title" class="hero-title" data-split>
+          <span data-i18n="hero.line1">Train harder.</span>
+          <em data-i18n="hero.line2">Forge stronger.</em>
+        </h1>
+        <p class="hero-lead" data-i18n="hero.lead">1,400 m² of serious equipment, 45+ classes a week and coaches who push you further than you'd push yourself. Limassol's home of strength.</p>
+        <div class="hero-ctas">
+          <a href="#trial" class="btn btn-primary" data-i18n="hero.cta1">Claim your free session</a>
+          <a href="#membership" class="btn btn-ghost-light" data-i18n="hero.cta2">See memberships</a>
+        </div>
+        <ul class="hero-facts" aria-label="Highlights">
+          <li><strong>1,400</strong><span data-i18n="hero.f1">m² training floor</span></li>
+          <li><strong>45+</strong><span data-i18n="hero.f2">classes every week</span></li>
+          <li><strong>12</strong><span data-i18n="hero.f3">certified coaches</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Practical details, straight after the hero -->
+    <div class="info-strip">
+      <div class="container info-strip-inner">
+        <p><strong data-i18n="strip.where">48 Spyrou Kyprianou Ave, Limassol</strong><span data-i18n="strip.whereSub">Free parking for members</span></p>
+        <p><strong data-i18n="strip.when">Mon–Fri 06:00–23:00</strong><span data-i18n="strip.whenSub">Sat 08:00–21:00 · Sun 09:00–18:00</span></p>
+        <p><strong data-i18n="strip.trial">First session free</strong><span data-i18n="strip.trialSub">No joining fee, no lock-in on monthly plans</span></p>
+      </div>
+    </div>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <div class="about-images">
+          <div class="about-img-main img-reveal" data-speed="-6">
+            <img src="https://images.unsplash.com/photo-1611672585731-fa10603fb9e0?auto=format&fit=crop&w=1000&q=80" alt="An athlete resting between sets on the FORGE training floor" loading="lazy" decoding="async" data-i18n-alt="about.img1">
+          </div>
+          <div class="about-img-small img-reveal" data-speed="10">
+            <img src="https://images.unsplash.com/photo-1576678927484-cc907957088c?auto=format&fit=crop&w=600&q=80" alt="Rows of heavy dumbbells on the rack" loading="lazy" decoding="async" data-i18n-alt="about.img2">
+          </div>
+          <div class="about-badge">
+            <svg viewBox="0 0 120 120" class="badge-ring" aria-hidden="true">
+              <defs><path id="badge-circle" d="M60,60 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0"/></defs>
+              <text><textPath href="#badge-circle">STRENGTH · CONDITIONING · LIMASSOL · </textPath></text>
+            </svg>
+            <span class="badge-center"><small data-i18n="about.badge">est.</small><strong>2016</strong></span>
+          </div>
+        </div>
+        <div class="about-text glass">
+          <p class="eyebrow" data-anim="fade" data-i18n="about.eyebrow">The club</p>
+          <h2 id="about-title" class="section-title" data-split data-i18n="about.title">Built for people who <em>show up</em></h2>
+          <p data-anim="fade" data-i18n="about.p1">FORGE started in 2016 as a garage with two squat racks and a stubborn idea: a gym should make you better, not just busier.</p>
+          <p data-anim="fade" data-i18n="about.p2">No mirrors-and-selfies culture, no crowded floors at 6pm.</p>
+          <ul class="stats" data-anim="stagger">
+            <li><strong>1,800+</strong><span data-i18n="about.stat1">active members</span></li>
+            <li><strong>98%</strong><span data-i18n="about.stat2">would recommend us</span></li>
+            <li><strong>4.9</strong><span data-i18n="about.stat3">Google rating</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EQUIPMENT ============ -->
+    <section class="section equipment" id="equipment" aria-labelledby="equip-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow" data-anim="fade" data-i18n="equip.eyebrow">Equipment</p>
+          <h2 id="equip-title" class="section-title" data-split data-i18n="equip.title">What's on the <em>floor</em></h2>
+          <p class="section-lead" data-anim="fade" data-i18n="equip.lead">Six training zones, pro-grade brands, and never a queue for the rack.</p>
+        </div>
+
+        <div class="menu-controls" data-anim="fade">
+          <div class="menu-tabs" role="tablist" aria-label="Equipment zones" id="equip-tabs"></div>
+        </div>
+
+        <p class="menu-hint" id="equip-hint" data-anim="fade">
+          <span class="hint-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M2.5 12h2M19.5 12h2M5.5 8v8M18.5 8v8M8 6.5v11M16 6.5v11M8 12h8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+          <span data-i18n="equip.hint">Tap any machine to see a photo &amp; details</span>
+        </p>
+
+        <div class="menu-sheet glass">
+          <div class="menu-panel" id="equip-panel" role="tabpanel" tabindex="0"></div>
+          <p class="menu-note" data-i18n="equip.note">Every new member gets a free 30-minute floor induction with a coach.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CLASSES ============ -->
+    <section class="section classes" id="classes" aria-labelledby="classes-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow" data-anim="fade" data-i18n="classes.eyebrow">Group training</p>
+          <h2 id="classes-title" class="section-title" data-split data-i18n="classes.title">45 classes a <em>week</em></h2>
+          <p class="section-lead" data-anim="fade" data-i18n="classes.lead">From sunrise HIIT to late-night boxing — find your crew, find your pace.</p>
+        </div>
+
+        <div class="class-grid" id="class-grid" data-anim="stagger"></div>
+
+        <div class="timetable glass" data-anim="rise">
+          <div class="tt-head">
+            <h3 data-i18n="tt.title">This week's timetable</h3>
+            <div class="menu-filters" role="group" aria-label="Class type" id="tt-filters">
+              <button type="button" class="chip" data-filter="strength" aria-pressed="false"><span class="type-dot type-strength"></span><span data-i18n="type.strength">Strength</span></button>
+              <button type="button" class="chip" data-filter="cardio" aria-pressed="false"><span class="type-dot type-cardio"></span><span data-i18n="type.cardio">Cardio</span></button>
+              <button type="button" class="chip" data-filter="combat" aria-pressed="false"><span class="type-dot type-combat"></span><span data-i18n="type.combat">Combat</span></button>
+              <button type="button" class="chip" data-filter="mind" aria-pressed="false"><span class="type-dot type-mind"></span><span data-i18n="type.mind">Mind &amp; Body</span></button>
+            </div>
+          </div>
+          <div class="menu-tabs day-tabs" role="tablist" aria-label="Day of the week" id="day-tabs"></div>
+          <div class="tt-list" id="tt-list" role="tabpanel" aria-live="polite"></div>
+          <p class="menu-note" data-i18n="tt.note">Classes are included in Forge and Elite memberships. Book a spot from the app or at reception.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ COACHES ============ -->
+    <section class="section crew" id="coaches" aria-labelledby="crew-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow" data-anim="fade" data-i18n="crew.eyebrow">Your coaches</p>
+          <h2 id="crew-title" class="section-title" data-split data-i18n="crew.title">Your <em>coaches</em></h2>
+        </div>
+        <div class="crew-grid">
+          <article class="crew-card">
+            <div class="crew-photo img-reveal"><img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&crop=faces&w=800&h=1000&q=80" alt="Head coach Nikos training with a dumbbell" loading="lazy" decoding="async" data-i18n-alt="crew.1.alt"></div>
+            <div class="crew-body glass-dark" data-anim="stagger">
+              <p class="crew-role" data-i18n="crew.1.role">Founder &amp; Head Coach</p>
+              <h3 data-i18n="crew.1.name">Nikos Georgiou</h3>
+              <p data-i18n="crew.1.bio">Former national weightlifting team athlete.</p>
+              <ul class="crew-tags"><li>Strength</li><li>Powerlifting</li><li>Olympic lifts</li></ul>
+              <blockquote data-i18n="crew.1.quote">“Strong is a skill. We teach it.”</blockquote>
+            </div>
+          </article>
+          <article class="crew-card">
+            <div class="crew-photo img-reveal"><img src="https://images.unsplash.com/photo-1574680088814-c9e8a10d8a4d?auto=format&fit=crop&crop=faces&w=800&h=1000&q=80" alt="Coach Christina in the gym" loading="lazy" decoding="async" data-i18n-alt="crew.2.alt"></div>
+            <div class="crew-body glass-dark" data-anim="stagger">
+              <p class="crew-role" data-i18n="crew.2.role">HIIT &amp; Conditioning Lead</p>
+              <h3 data-i18n="crew.2.name">Christina Ioannou</h3>
+              <p data-i18n="crew.2.bio">Ex-sprinter and certified strength &amp; conditioning specialist.</p>
+              <ul class="crew-tags"><li>HIIT</li><li>Conditioning</li><li>Fat loss</li></ul>
+              <blockquote data-i18n="crew.2.quote">“The last round is where the change happens.”</blockquote>
+            </div>
+          </article>
+          <article class="crew-card">
+            <div class="crew-photo img-reveal"><img src="https://images.unsplash.com/photo-1604480133435-25b86862d276?auto=format&fit=crop&crop=faces&w=800&h=1000&q=80" alt="Coach Marios working on the cable machine" loading="lazy" decoding="async" data-i18n-alt="crew.3.alt"></div>
+            <div class="crew-body glass-dark" data-anim="stagger">
+              <p class="crew-role" data-i18n="crew.3.role">Boxing &amp; Personal Training</p>
+              <h3 data-i18n="crew.3.name">Marios Charalambous</h3>
+              <p data-i18n="crew.3.bio">Amateur boxing champion turned personal trainer.</p>
+              <ul class="crew-tags"><li>Boxing</li><li>PT</li><li>Mobility</li></ul>
+              <blockquote data-i18n="crew.3.quote">“Hands up, chin down, keep moving.”</blockquote>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MEMBERSHIP ============ -->
+    <section class="section membership" id="membership" aria-labelledby="plans-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow" data-anim="fade" data-i18n="plans.eyebrow">Membership</p>
+          <h2 id="plans-title" class="section-title" data-split data-i18n="plans.title">Membership <em>prices</em></h2>
+          <p class="section-lead" data-anim="fade" data-i18n="plans.lead">No joining fee. No lock-in on monthly plans. Freeze anytime.</p>
+        </div>
+
+        <div class="billing" data-anim="fade">
+          <div class="billing-switch" role="group" aria-label="Billing period">
+            <span class="pill" aria-hidden="true"></span>
+            <button type="button" data-billing="month" aria-pressed="true" data-i18n="plans.monthly">Monthly</button>
+            <button type="button" data-billing="year" aria-pressed="false" data-i18n="plans.yearly">Yearly</button>
+          </div>
+          <span class="save-badge" data-i18n="plans.save">Save 15%</span>
+        </div>
+
+        <div class="plan-grid" id="plan-grid" data-anim="stagger"></div>
+
+        <ul class="extras" data-anim="stagger">
+          <li><strong>€12</strong><span data-i18n="extras.day">Day pass</span></li>
+          <li><strong>€95</strong><span data-i18n="extras.pack">10-class pack</span></li>
+          <li><strong>€40</strong><span data-i18n="extras.pt">Personal training session</span></li>
+          <li><strong>−20%</strong><span data-i18n="extras.student">Students &amp; under 21</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="section faq" id="faq" aria-labelledby="faq-title">
+      <div class="container faq-grid">
+        <div class="faq-intro">
+          <p class="eyebrow eyebrow-light" data-anim="fade" data-i18n="faq.eyebrow">Good to know</p>
+          <h2 id="faq-title" class="section-title" data-split data-i18n="faq.title">Questions, <em>answered</em></h2>
+          <p data-anim="fade" data-i18n="faq.lead">Still unsure? Call us or drop by reception — we'll show you around.</p>
+          <a class="reserve-phone" data-anim="fade" href="tel:+35725123456">+357 25 123 456</a>
+        </div>
+        <div class="faq-list glass-dark" id="faq-list" data-anim="rise"></div>
+      </div>
+    </section>
+
+    <!-- ============ GALLERY ============ -->
+    <section class="section gallery" id="gallery" aria-labelledby="gallery-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow" data-anim="fade" data-i18n="gallery.eyebrow">A look inside</p>
+          <h2 id="gallery-title" class="section-title" data-split data-i18n="gallery.title">Inside <em>the gym</em></h2>
+        </div>
+        <div class="gallery-grid" id="gallery-grid"></div>
+      </div>
+    </section>
+
+    <!-- ============ REVIEWS ============ -->
+    <section class="section reviews" id="reviews" aria-labelledby="reviews-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow" data-anim="fade" data-i18n="reviews.eyebrow">Member stories</p>
+          <h2 id="reviews-title" class="section-title" data-split data-i18n="reviews.title">What members <em>say</em></h2>
+          <p class="rating-summary" data-anim="fade"><span class="stars" aria-hidden="true">★★★★★</span> <strong>4.9</strong> · <span data-i18n="reviews.count">410+ Google reviews</span></p>
+        </div>
+        <div class="review-slider glass" data-anim="fade" aria-roledescription="carousel" aria-label="Member reviews">
+          <div class="review-stage" id="review-stage" aria-live="polite"></div>
+          <div class="slider-controls">
+            <button type="button" class="slider-btn" id="review-prev" aria-label="Previous review">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="slider-count"><span id="review-current">01</span><span class="slider-bar"><span id="review-progress"></span></span><span id="review-total">05</span></div>
+            <button type="button" class="slider-btn" id="review-next" aria-label="Next review">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FREE TRIAL ============ -->
+    <section class="section reserve" id="trial" aria-labelledby="trial-title">
+      <div class="reserve-bg" aria-hidden="true"></div>
+      <div class="container reserve-grid">
+        <div class="reserve-intro">
+          <p class="eyebrow eyebrow-light" data-anim="fade" data-i18n="trial.eyebrow">Free trial</p>
+          <h2 id="trial-title" class="section-title" data-split data-i18n="trial.title">Your first session is <em>on us</em></h2>
+          <p data-anim="fade" data-i18n="trial.lead">Pick a time, tell us your goal and a coach will meet you at the door. No pressure, no sales pitch.</p>
+          <ul class="trial-perks" data-anim="stagger">
+            <li data-i18n="trial.p1">Full gym &amp; class access for the day</li>
+            <li data-i18n="trial.p2">30-minute session with a coach</li>
+            <li data-i18n="trial.p3">Body composition scan</li>
+          </ul>
+        </div>
+
+        <form class="reserve-form" id="trial-form" data-anim="rise" novalidate>
+          <div class="field">
+            <label for="r-name" data-i18n="form.name">Full name</label>
+            <input id="r-name" name="name" type="text" autocomplete="name" required>
+            <p class="error" data-i18n="form.err.name">Please enter your name.</p>
+          </div>
+          <div class="field-row two">
+            <div class="field">
+              <label for="r-phone" data-i18n="form.phone">Phone</label>
+              <input id="r-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="+357 99 000000" required>
+              <p class="error" data-i18n="form.err.phone">Please enter a valid phone number.</p>
+            </div>
+            <div class="field">
+              <label for="r-email" data-i18n="form.email">Email (optional)</label>
+              <input id="r-email" name="email" type="email" autocomplete="email">
+              <p class="error" data-i18n="form.err.email">Please enter a valid email.</p>
+            </div>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="r-date" data-i18n="form.date">Date</label>
+              <input id="r-date" name="date" type="date" required>
+              <p class="error" data-i18n="form.err.date">Please choose a date.</p>
+            </div>
+            <div class="field">
+              <label for="r-time" data-i18n="form.time">Time</label>
+              <select id="r-time" name="time" required></select>
+              <p class="error" data-i18n="form.err.time">Please choose a time.</p>
+            </div>
+            <div class="field">
+              <label for="r-goal" data-i18n="form.goal">Main goal</label>
+              <select id="r-goal" name="goal" required></select>
+            </div>
+          </div>
+          <div class="field">
+            <label for="r-notes" data-i18n="form.notes">Anything we should know? (optional)</label>
+            <textarea id="r-notes" name="notes" rows="3" data-i18n-placeholder="form.notesPh" placeholder="Injuries, experience level, a class you'd like to try…"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block" data-i18n="form.submit">Book my free session</button>
+          <p class="form-hint" data-i18n="form.hint">Demo form — no real booking is sent.</p>
+        </form>
+      </div>
+    </section>
+
+    <!-- ============ VISIT ============ -->
+    <section class="section visit" id="visit" aria-labelledby="visit-title">
+      <div class="container visit-grid">
+        <div class="visit-info glass">
+          <p class="eyebrow" data-anim="fade" data-i18n="visit.eyebrow">Find us</p>
+          <h2 id="visit-title" class="section-title" data-split data-i18n="visit.title">How to <em>find us</em></h2>
+
+          <div data-anim="stagger">
+            <div class="info-block">
+              <h3 data-i18n="visit.address">Address</h3>
+              <p>48 Spyrou Kyprianou Avenue<br><span data-i18n="visit.city">4043 Limassol, Cyprus</span></p>
+              <p class="info-note" data-i18n="visit.parking">Free member parking for 60 cars behind the building.</p>
+              <a class="link-arrow" href="https://www.google.com/maps/search/?api=1&query=Spyrou+Kyprianou+Avenue+Limassol" target="_blank" rel="noopener"><span data-i18n="visit.directions">Get directions</span> <span aria-hidden="true">→</span></a>
+            </div>
+
+            <div class="info-block">
+              <h3 data-i18n="visit.hours">Opening hours</h3>
+              <table class="hours" id="hours-table"><tbody></tbody></table>
+              <p class="info-note" data-i18n="visit.holidays">Public holidays: 09:00 – 15:00</p>
+            </div>
+
+            <div class="info-block">
+              <h3 data-i18n="visit.contact">Contact</h3>
+              <p><a href="tel:+35725123456">+357 25 123 456</a><br><a href="mailto:hello@forgeathletic.cy">hello@forgeathletic.cy</a></p>
+              <div class="socials">
+                <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg></a>
+                <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4h-3c-2.8 0-4.5 1.8-4.5 4.6V11H7v4h2.5v6h4v-6h3l.5-4h-3.5V9c0-.6.4-1 1-1z" fill="currentColor"/></svg></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="map-wrap img-reveal">
+          <iframe title="Map showing FORGE Athletic Club location in Limassol" src="https://www.google.com/maps?q=Spyrou+Kyprianou+Avenue+Limassol+Cyprus&z=15&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <p class="footer-tag" data-i18n="footer.tag">Strength &amp; conditioning in the heart of Limassol.</p>
+        <form class="newsletter" id="newsletter" novalidate>
+          <label for="nl-email" data-i18n="footer.nl">Get training tips, new classes & member events in your inbox</label>
+          <div class="nl-row">
+            <input id="nl-email" type="email" placeholder="you@example.com" autocomplete="email" required>
+            <button type="submit" class="btn btn-primary btn-sm" data-i18n="footer.nlBtn">Subscribe</button>
+          </div>
+          <p class="nl-msg" id="nl-msg" aria-live="polite"></p>
+        </form>
+      </div>
+      <div class="footer-links">
+        <ul>
+          <li><a href="#about" data-i18n="nav.club">The Club</a></li>
+          <li><a href="#equipment" data-i18n="nav.equipment">Equipment</a></li>
+          <li><a href="#classes" data-i18n="nav.classes">Classes</a></li>
+          <li><a href="#membership" data-i18n="nav.membership">Membership</a></li>
+          <li><a href="#trial" data-i18n="nav.trial">Free trial</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-wordmark" aria-hidden="true">FORGE<em>.</em></div>
+    <div class="container footer-bottom">
+      <p>© <span id="year"></span> FORGE Athletic Club. <span data-i18n="footer.rights">All rights reserved.</span></p>
+      <p class="credit"><span data-i18n="footer.credit">Website by</span> <button type="button" class="credit-link" data-hire>Aristeidis Kamaritis</button></p>
+      <button type="button" class="to-top" id="to-top"><span data-i18n="footer.top">Back to top</span> <span aria-hidden="true">↑</span></button>
+    </div>
+  </footer>
+
+  <!-- "Want a site like this?" — designer contact -->
+  <button type="button" class="btn hire-fab" id="hire-fab" data-hire aria-haspopup="dialog" aria-controls="hire-panel" data-i18n="hire.fab">Want a site like this?</button>
+
+  <div class="hire" id="hire-panel" role="dialog" aria-modal="true" aria-labelledby="hire-title" hidden>
+    <div class="hire-backdrop"></div>
+    <div class="hire-card">
+      <button type="button" class="hire-close" aria-label="Close"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></button>
+      <div class="hire-head">
+        <span class="hire-avatar" aria-hidden="true">AK</span>
+        <div>
+          <p class="hire-eyebrow" data-i18n="hire.eyebrow">Freelance web designer · Cyprus</p>
+          <h3 id="hire-title">Aristeidis Kamaritis</h3>
+        </div>
+      </div>
+      <p class="hire-text" data-i18n="hire.text">I design and build fast, modern websites for Cyprus businesses — just like this one. Let's talk about yours.</p>
+      <ul class="hire-list">
+        <li>
+          <a class="hire-item" href="https://aristidiskamaritis.github.io/" target="_blank" rel="noopener">
+            <span class="hire-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M3 9h18" stroke="currentColor" stroke-width="1.8"/></svg></span>
+            <span><strong data-i18n="hire.site">See my work and prices</strong><small>aristidiskamaritis.github.io</small></span>
+            <span class="hire-arrow" aria-hidden="true">→</span>
+          </a>
+        </li>
+        <li>
+          <a class="hire-item" href="tel:+35796272170">
+            <span class="hire-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z" fill="currentColor"/></svg></span>
+            <span><strong>+357 96 272170</strong><small data-i18n="hire.callHint">Call me</small></span>
+            <span class="hire-arrow" aria-hidden="true">→</span>
+          </a>
+        </li>
+        <li>
+          <a class="hire-item" id="hire-email" href="mailto:aristidiskamaritis@gmail.com">
+            <span class="hire-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M3.5 6.5l8.5 6.5 8.5-6.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></span>
+            <span><strong>aristidiskamaritis@gmail.com</strong><small data-i18n="hire.emailHint">Send me an email</small></span>
+            <span class="hire-arrow" aria-hidden="true">→</span>
+          </a>
+        </li>
+      </ul>
+      <p class="hire-foot" data-i18n="hire.foot">FORGE Athletic Club is a demo gym created to showcase my work.</p>
+    </div>
+  </div>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" hidden>
+    <div class="lb-backdrop"></div>
+    <button class="lb-close" type="button" aria-label="Close"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></button>
+    <button class="lb-nav lb-prev" type="button" aria-label="Previous image"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    <figure class="lb-figure"><div class="lb-frame"><img alt=""></div><figcaption></figcaption></figure>
+    <button class="lb-nav lb-next" type="button" aria-label="Next image"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+  </div>
+
+  <!-- Equipment details (opened from the equipment list) -->
+  <div class="dish" id="dish" role="dialog" aria-modal="true" aria-labelledby="dish-name" hidden>
+    <div class="dish-backdrop"></div>
+    <article class="dish-card">
+      <button class="dish-close" type="button" data-i18n-label="dish.close" aria-label="Close"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></button>
+      <div class="dish-media"><img alt=""></div>
+      <div class="dish-body">
+        <p class="eyebrow dish-cat"></p>
+        <h3 id="dish-name"></h3>
+        <div class="dish-tags"></div>
+        <p class="dish-desc"></p>
+        <p class="dish-plate"><strong data-i18n="dish.trains">Trains</strong><span></span></p>
+        <div class="dish-foot">
+          <span class="dish-count-units"></span>
+          <div class="dish-nav">
+            <button type="button" class="dish-prev" data-i18n-label="dish.prev" aria-label="Previous"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+            <span class="dish-count"></span>
+            <button type="button" class="dish-next" data-i18n-label="dish.next" aria-label="Next"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          </div>
+        </div>
+      </div>
+    </article>
+  </div>
+
+  <!-- Booking confirmation -->
+  <div class="modal" id="booking-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+    <div class="modal-backdrop"></div>
+    <div class="modal-card">
+      <svg class="modal-check" viewBox="0 0 64 64" aria-hidden="true">
+        <circle cx="32" cy="32" r="30" fill="none" stroke="currentColor" stroke-width="2"/>
+        <path d="M20 33l8 8 16-17" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <h3 id="modal-title" data-i18n="modal.title">You're in!</h3>
+      <p id="modal-text"></p>
+      <button type="button" class="btn btn-primary" id="modal-close" data-i18n="modal.close">Let's go</button>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="js/data.js?v=2" defer></script>
+  <script src="js/main.js?v=2" defer></script>
+</body>
+</html>

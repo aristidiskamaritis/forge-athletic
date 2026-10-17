@@ -1,0 +1,5 @@
+.netlify/
+.claude/
+netlify.toml
+HIGGSFIELD-PROMPT.md
+videos/playground-result-*.mp4

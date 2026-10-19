@@ -31,6 +31,8 @@ const I18N = {
     "status.today": "today",
     "status.tomorrow": "tomorrow",
 
+    "demo.title": "Demo website",
+    "demo.text": "Not a real gym. Designed and built by AK Web Dev →",
     "hero.line1": "Train harder.",
     "hero.line2": "Forge stronger.",
     "hero.lead": "1,400 m² of serious equipment, 45+ classes a week and coaches who push you further than you'd push yourself. Limassol's home of strength.",
@@ -209,6 +211,8 @@ const I18N = {
     "status.today": "σήμερα",
     "status.tomorrow": "αύριο",
 
+    "demo.title": "Demo ιστοσελίδα",
+    "demo.text": "Δεν είναι πραγματικό γυμναστήριο. Σχεδιασμός και κατασκευή: AK Web Dev →",
     "hero.line1": "Προπονήσου σκληρά.",
     "hero.line2": "Γίνε ατσάλι.",
     "hero.lead": "1.400 m² σοβαρού εξοπλισμού, 45+ τμήματα την εβδομάδα και προπονητές που σε σπρώχνουν πιο μακριά απ' όσο θα πήγαινες μόνος σου. Το σπίτι της δύναμης στη Λεμεσό.",

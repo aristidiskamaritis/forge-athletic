@@ -221,7 +221,7 @@ p { margin: 0 0 1em; }
   display: inline-flex; align-items: center; gap: .55rem;
   background: rgba(255, 255, 255, .08); border: 1px solid rgba(255, 255, 255, .18);
   backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
-  padding: .42rem 1rem; border-radius: 999px; font-size: .78rem; font-weight: 700; letter-spacing: .04em; margin-bottom: 1.6rem;
+  padding: .42rem 1rem; border-radius: 999px; font-size: .78rem; font-weight: 700; letter-spacing: .04em; margin-bottom: 1.4rem; vertical-align: middle;
 }
 .status-pill .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--open); box-shadow: 0 0 0 0 rgba(74, 222, 128, .7); animation: pulse 2.2s infinite; }
 .status-pill.closed .dot { background: var(--fire); animation: none; }
@@ -547,9 +547,9 @@ p { margin: 0 0 1em; }
 .plan-features { list-style: none; margin: 0 0 1.8rem; padding: 1.4rem 0 0; border-top: 1px solid var(--line); display: grid; gap: .7rem; flex: 1; align-content: start; }
 .plan-features li { display: flex; gap: .65rem; font-size: .93rem; color: var(--text); line-height: 1.4; }
 .plan-features svg { flex: none; width: 19px; height: 19px; color: var(--fire); margin-top: .05rem; }
-.plan-features li.is-missing { color: var(--muted); }
-.plan-features li.is-missing span { text-decoration: line-through; text-decoration-color: rgba(157, 146, 138, .6); }
-.plan-features li.is-missing svg { color: rgba(157, 146, 138, .6); }
+/* what a plan doesn't include: one quiet line under the list instead of crossed-out rows */
+.plan-missing { margin: -1rem 0 1.8rem; font-size: .82rem; line-height: 1.45; color: var(--muted); }
+.plan-missing strong { font-weight: 700; color: var(--text-soft); }
 
 .extras { list-style: none; margin: clamp(2.5rem, 5vw, 3.6rem) 0 0; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
 .extras li {
@@ -772,7 +772,7 @@ p { margin: 0 0 1em; }
   transition: background-color .2s ease, color .2s ease, opacity .3s ease, visibility .3s;
 }
 .hire-fab:hover { background: var(--fire); color: var(--white); filter: none; }
-.nav-open .hire-fab, .hire-open .hire-fab { opacity: 0; visibility: hidden; }
+.nav-open .hire-fab, .hire-open .hire-fab, .fab-away .hire-fab { opacity: 0; visibility: hidden; }
 
 .hire { position: fixed; inset: 0; z-index: 850; display: flex; align-items: flex-end; justify-content: flex-end; padding: 1.25rem; }
 .hire[hidden] { display: none; }
@@ -912,9 +912,9 @@ p { margin: 0 0 1em; }
 
 /* ---------- Demo website sign (this is a portfolio concept, not a real gym) ---------- */
 .demo-sign {
-  display: grid; width: fit-content; gap: .5rem; max-width: 100%;
-  margin-bottom: 1.6rem; padding: .95rem 1.4rem 1.05rem;
-  border: 2px dashed var(--fire); border-radius: var(--radius-sm);
+  display: inline-flex; flex-wrap: wrap; align-items: baseline; gap: .2rem .7rem; max-width: 100%; vertical-align: middle;
+  margin: 0 .6rem 1.4rem 0; padding: .45rem 1rem;
+  border: 1.5px dashed var(--fire); border-radius: 999px;
   background: rgba(11, 9, 8, .55);
   -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px);
   color: var(--text); text-decoration: none;
@@ -923,7 +923,7 @@ p { margin: 0 0 1em; }
 .demo-sign:hover { background: rgba(11, 9, 8, .75); border-style: solid; }
 .demo-sign-title {
   font-family: var(--font-display); font-weight: 900; text-transform: uppercase;
-  font-size: clamp(2.4rem, 6.5vw, 4.6rem); letter-spacing: .04em; line-height: .86;
+  font-size: 1.05rem; letter-spacing: .08em; line-height: 1.2;
   background: var(--fire-grad); -webkit-background-clip: text; background-clip: text; color: transparent;
 }
-.demo-sign-text { font-size: clamp(.85rem, 1.2vw, .98rem); color: var(--text-soft); }
+.demo-sign-text { font-size: .8rem; line-height: 1.3; color: var(--text-soft); }

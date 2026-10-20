@@ -643,7 +643,6 @@
   let billing = "month";
   const planPrice = (p) => (billing === "year" ? Math.floor(p.price * 0.85) : p.price);
   const CHECK = `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
-  const CROSS = `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7l10 10M17 7L7 17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>`;
 
   function billedText(p) {
     return billing === "year" ? t("plans.billedYear", { total: num(planPrice(p) * 12) }) : t("plans.billedMonth");
@@ -659,6 +658,7 @@
           <p class="plan-price"><span class="cur">€</span><span class="amt">${planPrice(p)}</span><span class="per"></span></p>
           <p class="plan-billed"></p>
           <ul class="plan-features"></ul>
+          <p class="plan-missing" hidden></p>
           <a href="#trial" class="btn ${p.popular ? "btn-primary" : "btn-outline"} btn-block plan-cta" data-plan="${p.id}"></a>
         </article>`).join("");
     }
@@ -671,8 +671,10 @@
       $(".plan-tag", card).textContent = L.tag;
       $(".per", card).textContent = t("plans.perMonth");
       $(".plan-billed", card).textContent = billedText(p);
-      $(".plan-features", card).innerHTML = L.features.map((f) => `<li>${CHECK}<span>${esc(f)}</span></li>`).join("")
-        + L.missing.map((f) => `<li class="is-missing">${CROSS}<span>${esc(f)}</span></li>`).join("");
+      $(".plan-features", card).innerHTML = L.features.map((f) => `<li>${CHECK}<span>${esc(f)}</span></li>`).join("");
+      const missing = $(".plan-missing", card);
+      missing.hidden = !L.missing.length;
+      missing.innerHTML = L.missing.length ? `<strong>${esc(t("plans.notIncluded"))}</strong> ${L.missing.map(esc).join(" · ")}` : "";
       const cta = $(".plan-cta", card);
       const label = t("plans.cta");
       cta.innerHTML = `<span class="roll"><span>${esc(label)}</span><span aria-hidden="true">${esc(label)}</span></span>`;
@@ -1167,6 +1169,17 @@
   });
 
   window.addEventListener("resize", updateAllPills);
+
+  // The floating "Want a site like this?" button steps aside while the hero or footer
+  // (which both carry the same link) is on screen, so it never covers content there
+  if ("IntersectionObserver" in window) {
+    const fabAway = new Set();
+    const fabIo = new IntersectionObserver((entries) => {
+      entries.forEach((en) => (en.isIntersecting ? fabAway.add(en.target) : fabAway.delete(en.target)));
+      document.body.classList.toggle("fab-away", fabAway.size > 0);
+    }, { threshold: 0.12 });
+    [$(".hero"), $(".site-footer")].forEach((el) => el && fabIo.observe(el));
+  }
 
   setInterval(renderStatus, 60 * 1000);
 })();
